@@ -17,7 +17,7 @@
 
 ## Junior front-end - test task
 
-Your task is to develop a hero page placed following (this)[] link.
+Your task is to develop a hero page placed following [this](https://www.figma.com/file/b9FClreuQaoZFCdY2L4afE/Untitled?node-id=2%3A2) link.
 This screen represents some sort of a slider with ability to see short info about apcomming events.
 
 #### Technical requirements
