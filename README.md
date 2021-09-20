@@ -1,24 +1,35 @@
 # Universe_Hexagon
 
-### Basic requirements for the test assignment
+### Basic requirements for the test assignment:
 
  1) Time to complete the test assignment - 2 days (48 hours)
- 2) Using the necessary libraries or plugins at your discretion, also considering the use of Vanilla JavaScript.
- 3) The layout of the site should be similar to the layout, considered the customization of colors, background, or improve any other elements.
- 4) The use of CSS preprocessors is encouraged when writing.
+ 2) Use only Vanilla JavaScript Framework. It'd be better to prevent usage of additional libraries and plugins, but it's not mandatory.
+ 3) A page you're about to create should look similar to the layout. It means that all the critical elements would be checked for similarity with the design.
+ 4) Feel free to use CSS preprocessors to make your developing process easier
  
 ### Technology Stack
+
 * HTML or Preprocessors HTML
 * Css/Scss/Sass
-* JavaScript
+* Vanilla JavaScript Framework
 * Gulp/Webpack
 
 
 ## Junior front-end - test task
-Your task is to develop a hero page.
+
+Your task is to develop a hero page placed following (this)[] link.
+This screen represents some sort of a slider with ability to see short info about apcomming events.
+
 #### Technical requirements
 
-* The hexagon on the page are elements of the list of events.
-* When scrolling down/up, the hexagon must move. For example, if you scroll down one step, the hexagon must move with animation to the bottom hexagon, and the bottom hexagon must move in place of the very last hexagon.
-* There must be a total of 5 hexagon as shown.
-* When clicking on any hexagon, it must move to the center and the rest must move according to their positions. When a hexagon gets to the center its content should change as in the figure example and the side containers should change their content to match the desired hexagon slide. When you leave the center, its content should hide and show only the date as in the figure.
+* The hexagon on the page are elements of the events list.
+* When scrolling down/up, hexagons should move. For example, if you scroll down one step, central biggest hexagon will move with animation to the bottom hexagon, and the top hexagon must move in place of the central one.
+* Total amount of hexagons is 5. But in case if number will grow, your page should work in the same way.
+* Move hexagon to the center by clicking on it. Rest of the hexagons should move according to their positions. It's mandatory to change content of side blocks placed on the top left and bottom right sides. 
+* Side containers contains the info only about the event in active hexagon.
+* Inactive hexagons shows less info than the active one. So when hexagon becomes inactive, unnecessary content should be hidden.
+
+## Task submission
+1) Fork the repo, so you could use it in your profile
+2) Create project, make your changes
+3) Once your work is done, provide 2 links: repository link and github-pages link 
