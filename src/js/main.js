@@ -10,20 +10,20 @@ new Swiper('.item-slider', {
     centeredSlides: true,
     initialSlide: 2,
     loop: true,
-    speed: 600,
+    speed: 900,
     direction: 'vertical',
-//     virtual: {
-//         slides: (function () {
-//             let slide = []
-//             for (let i = 0; i < 5; i++) {
-//                 slide.push(`<div class="item-slider__slide">
-// <p class="item-day">Day ${i}</p>
-// <p class="item-date">Date ${i}</p>
-// <p class="short-desc">desc ${i}</p>
-// <button class="buy-btn">buy ticket</button>
-// </div>`);
-//             }
-//             return slide;
-//         }()),
-//     },
+    // virtual: {
+    //     slides: fetch('/info.json', {
+    //         method: 'GET',
+    //         headers: {
+    //             'Content-type': 'application/json'
+    //         }
+    //     })
+    //         .then(resp => resp.json())
+    //         .then(data => data.results.sort(a, b) => b.event_id - a.event_id))
+    //         .then(event => event.forEach((ev) => {
+    //
+    //         })
+    //
+    // },
 });

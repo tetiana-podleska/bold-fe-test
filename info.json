@@ -1,0 +1,58 @@
+[
+  {
+    "author": "группа Кино",
+    "day" : "Friday",
+    "date": 19.06,
+    "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
+    "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+    "_id": "01"
+  },
+  {
+    "author": "группа DDT",
+    "day" : "Sunday",
+    "date": 19.11,
+    "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
+    "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+    "_id": "02"
+  },
+  {
+    "author": "группа Кино",
+    "day" : "Saturday",
+    "date": 11.09,
+    "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
+    "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+    "_id": "03"
+  },
+  {
+    "author": "группа DDT",
+    "day" : "Friday",
+    "date": 16.08,
+    "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
+    "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+    "_id": "04"
+  },
+  {
+    "author": "группа Сплин",
+    "day" : "Wednesday",
+    "date": 16.04,
+    "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
+    "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+    "_id": "05"
+  },
+  {
+    "author": "gogi",
+    "day" : "Monday",
+    "date": 22.09,
+    "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
+    "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+    "_id": "06"
+  },
+  {
+    "author": " mgzavrebi",
+    "day" : "Friday",
+    "date": 19.06,
+    "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
+    "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+    "_id": "07"
+  }
+]
