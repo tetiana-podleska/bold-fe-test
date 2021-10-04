@@ -5,7 +5,7 @@ let dummyData = [
         "date": 19.06,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
-        "_id": "01"
+        "id": "01"
     },
     {
         "author": "группа DDT",
@@ -13,7 +13,7 @@ let dummyData = [
         "date": 19.11,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
-        "_id": "02"
+        "id": "02"
     },
     {
         "author": "группа Кино",
@@ -21,7 +21,7 @@ let dummyData = [
         "date": 11.09,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
-        "_id": "03"
+        "id": "03"
     },
     {
         "author": "группа DDT",
@@ -29,7 +29,7 @@ let dummyData = [
         "date": 16.08,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
-        "_id": "04"
+        "id": "04"
     },
     {
         "author": "группа Сплин",
@@ -37,7 +37,7 @@ let dummyData = [
         "date": 16.04,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
-        "_id": "05"
+        "id": "05"
     },
     {
         "author": "gogi",
@@ -45,7 +45,7 @@ let dummyData = [
         "date": 22.09,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
-        "_id": "06"
+        "id": "06"
     },
     {
         "author": " mgzavrebi",
@@ -53,12 +53,14 @@ let dummyData = [
         "date": 19.06,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
-        "_id": "07"
+        "id": "07"
     }
 ]
-console.log(dummyData);
 
-new Swiper('.item-slider', {
+
+const slider = document.querySelector('.item-slider')
+
+let mySlider = new Swiper(slider, {
     grabCursor: true,
     slideToClickedSlide: true,
     mousewheel: {
@@ -74,13 +76,35 @@ new Swiper('.item-slider', {
     direction: 'vertical',
 });
 
-let isActive = document.querySelector('.swiper-slide-active');
-console.log(isActive);
-let prevSlide = document.querySelector('.swiper-slide-prev');
-console.log(prevSlide);
-let nextSlide = document.querySelector('.swiper-slide-next')
-console.log(nextSlide);
+document.querySelector('.item-slider__slide').innerHTML = `<div class="hexagon-desc"></div>`
+for (let key in dummyData) {
+    let item = document.createElement('p')
+    item.innerHTML = `<p class="item-day">${key}</p>`
+    document.querySelector('.hexagon-desc').appendChild(item)
 
-if(isActive) {
-    dummyData.find()
+    for (let i = 0; i < dummyData[key].length; i++) {
+let elem = document.createElement('p')
+        elem.innerHTML = `
+        <p>${dummyData[key][i][0]}</p>
+        <p>${dummyData[key][i][2]}</p>
+        <p>${dummyData[key][i][3]}</p>
+        `
+        document.querySelector('.hexagon-desc').appendChild(elem)
+    }
 }
+//
+// for (let i = 0; i < dummyData.length; i++) {
+//     console.log(dummyData[i]);
+//     let slide = document.querySelector('.item-slider__hexagon')
+//     console.log(slide);
+//
+// }
+//
+// for (let i in dummyData) {
+//     let element = document.querySelector('.item-slider__hexagon')
+//     if(element) {
+//         element.innerHTML = dummyData[i]
+//     }
+// }
+
+// https://www.youtube.com/watch?v=TYRJ_X9qMSE&ab_channel=ITDoctor
