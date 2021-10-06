@@ -2,9 +2,9 @@ let dummyData = [
     {
         "author": "группа Кино",
         "day": "Friday",
-        "date": 19.06,
-        "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
-        "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+        "date": 13.06,
+        "shortDesc": "Популярная рок-группа 1980-х годов",
+        "longDesc": "Oдна из самых популярных советских рок-групп 1980-х годов, входила в состав Ленинградского рок-клуба",
     },
     {
         "author": "группа DDT",
@@ -17,8 +17,8 @@ let dummyData = [
         "author": "группа Кино",
         "day": "Saturday",
         "date": 11.09,
-        "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
-        "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
+        "shortDesc": "Лидером и автором почти всех текстов и музыки неизменно оставался Виктор Цой",
+        "longDesc": "Лидером и автором почти всех текстов и музыки неизменно оставался Виктор Цой, после смерти которого коллектив, выпустивший, в общей сложности, за девять лет в студийных альбомах более ста песен, прекратил существование.",
     },
     {
         "author": "группа DDT",
@@ -30,7 +30,7 @@ let dummyData = [
     {
         "author": "группа Сплин",
         "day": "Wednesday",
-        "date": 16.04,
+        "date": 14.04,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so consider the variability",
     },
@@ -44,7 +44,7 @@ let dummyData = [
     {
         "author": " mgzavrebi",
         "day": "Friday",
-        "date": 19.06,
+        "date": 12.06,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so",
     }
@@ -69,14 +69,25 @@ let mySlider = new Swiper(slider, {
     direction: 'vertical',
 });
 
-let mappedDummy = dummyData.map((elem, ind) => {
-    let slide = document.querySelector('.item-slider__hexagon');
-    slide.innerHTML = '';
-    slide.innerHTML = `<p class="item-day">${elem.day}</p> <p class="item-date">${elem.date}</p> <p class="short-desc">${elem.shortDesc}</p>
-                            <button class="buy-btn">buy ticket</button>`
-    console.log(slide);
+
+
+
+dummyData.map((elem) => {
+    // for (let key in dummyData)
+    let title = document.querySelector('.info-left');
+    title.innerHTML = '';
+    title.innerHTML = `<h1 class="item-title">${elem.author}</h1> `
+    console.log(title);
+    console.log(ind);
+    console.log(elem);
+
+    // let info = document.querySelector('.info-right');
+    // // info.innerHTML = '';
+    // info.innerHTML = `<p class="item-desc">${elem.longDesc}</p> `
+    // console.log(info);
+    // console.log(ind);
 
 })
-console.log(mappedDummy);
+
 
 
