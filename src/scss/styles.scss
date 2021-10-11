@@ -58,6 +58,28 @@
   margin: 20px 85px 20px 132px;
 }
 
+.item-day {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #003E61;
+  text-transform: uppercase;
+}
+
+.item-date {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #003E61;
+}
+
+.short-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #003E61;
+}
+
 /* slider styles */
 *,
 *::before,
@@ -101,12 +123,12 @@ img {
 
 .hexagon-desc {
   position: absolute;
-  top: 20%;
-  left: 40%;
+  top: 10%;
+  left: 14%;
 }
 
 .swiper-slide-active {
-  transform: scale(1.6) rotate(-50deg);
+  transform: scale(1.9) rotate(-50deg);
   transition: 0.7s;
 }
 
@@ -115,6 +137,3 @@ img {
   transition: 0.7s;
 }
 
-.item-day {
-  color: #000;
-}
