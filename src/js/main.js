@@ -79,17 +79,17 @@ for (let i = 0; i < elems.length; i++) {
 
         let days = elems[i].getElementsByClassName('item-day')
         for (let k = 0; k < days.length; k++) {
-            days[k].innerHTML = dummyData[k].day
+            days[k].innerHTML = dummyData[i].day
         }
 
     let dates = elems[i].getElementsByClassName('item-date')
         for (let k = 0; k < dates.length; k++) {
-            dates[k].innerHTML = `${dummyData[k].date}`
+            dates[k].innerHTML = `${dummyData[i].date}`
         }
 
     let shortDesc = elems[i].getElementsByClassName('short-desc');
         for (let k = 0; k < shortDesc.length; k++) {
-            shortDesc[k].innerHTML = `${dummyData[k].shortDesc}`
+            shortDesc[k].innerHTML = `${dummyData[i].shortDesc}`
         }
     }
 }
@@ -111,5 +111,9 @@ dummyData.map((elem) => {
 
 })
 
+console.log(dummyData.sort((a, b) => a.date - b.date))
 
 
+for (let i = 0; i < dummyData.length; i++) {
+    console.log(dummyData[i].day);
+}
