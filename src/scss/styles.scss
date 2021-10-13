@@ -74,11 +74,12 @@
 }
 
 .short-desc {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 11px;
   color: #003E61;
-}
+  padding: 0 100px 5px 100px;
+  }
 
 /* slider styles */
 *,
@@ -124,7 +125,7 @@ img {
 .hexagon-desc {
   position: absolute;
   top: 10%;
-  left: 14%;
+  left: 0;
 }
 
 .swiper-slide-active {

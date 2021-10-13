@@ -47,7 +47,8 @@ let dummyData = [
         "date": 12.06,
         "shortDesc": "Short description of the upcomming event. could be up to 3 lines of text",
         "longDesc": "long description of the upcoming event it should take at least 2 lines of text ot fit this design, so",
-    }
+    },
+
 ]
 
 
@@ -82,16 +83,17 @@ for (let i = 0; i < elems.length; i++) {
             days[k].innerHTML = dummyData[i].day
         }
 
-    let dates = elems[i].getElementsByClassName('item-date')
-        for (let k = 0; k < dates.length; k++) {
-            dates[k].innerHTML = `${dummyData[i].date}`
-        }
+        let dates = elems[i].getElementsByClassName('item-date')
+            for (let k = 0; k < dates.length; k++) {
+                dates[k].innerHTML = `${dummyData[i].date}`
+            }
 
-    let shortDesc = elems[i].getElementsByClassName('short-desc');
-        for (let k = 0; k < shortDesc.length; k++) {
-            shortDesc[k].innerHTML = `${dummyData[i].shortDesc}`
-        }
-    }
+        let shortDesc = elems[i].getElementsByClassName('short-desc');
+            for (let k = 0; k < shortDesc.length; k++) {
+                shortDesc[k].innerHTML = `${dummyData[i].shortDesc}`
+            }
+
+             }
 }
 
 dummyData.map((elem) => {
