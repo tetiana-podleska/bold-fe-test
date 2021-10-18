@@ -70,52 +70,42 @@ let mySlider = new Swiper(slider, {
     direction: 'vertical',
 });
 
+dummyData.map((elem) => {
+    // for (let key in dummyData)
+    let title = document.querySelector('.item-title');
+    title.innerHTML = `${elem.author} `
+    console.log(title);
+
+    let info = document.querySelector('.item-desc');
+    info.innerHTML = `${elem.longDesc}`
+    console.log(info);
+
+})
+
+
 let elems = document.getElementsByClassName('item-slider__slide');
-console.log(elems);
 
 for (let i = 0; i < elems.length; i++) {
     let divElem = elems[i].getElementsByClassName('hexagon-desc');
     for (let j = 0; j < divElem.length; j++) {
-        // console.log(divElem[j].innerHTML);
-
         let days = elems[i].getElementsByClassName('item-day')
         for (let k = 0; k < days.length; k++) {
-            days[k].innerHTML = dummyData[i].day
+            days[k].innerHTML = `${dummyData[i].day}`
         }
 
         let dates = elems[i].getElementsByClassName('item-date')
-            for (let k = 0; k < dates.length; k++) {
-                dates[k].innerHTML = `${dummyData[i].date}`
-            }
+        for (let k = 0; k < dates.length; k++) {
+            dates[k].innerHTML = `${dummyData[i].date}`
+        }
 
         let shortDesc = elems[i].getElementsByClassName('short-desc');
-            for (let k = 0; k < shortDesc.length; k++) {
-                shortDesc[k].innerHTML = `${dummyData[i].shortDesc}`
-            }
+        for (let k = 0; k < shortDesc.length; k++) {
+            shortDesc[k].innerHTML = `${dummyData[i].shortDesc}`
+        }
 
-             }
+    }
 }
 
-dummyData.map((elem) => {
-    // for (let key in dummyData)
-    let title = document.querySelector('.info-left');
-    title.innerHTML = '';
-    title.innerHTML = `<h1 class="item-title">${elem.author}</h1> `
-    // console.log(title);
-    // console.log(ind);
-    // console.log(elem);
-
-    let info = document.querySelector('.info-right');
-    // info.innerHTML = '';
-    info.innerHTML = `<p class="item-desc">${elem.longDesc}</p> `
-    // console.log(info);
-    // console.log(ind);
-
-})
-
-console.log(dummyData.sort((a, b) => a.date - b.date))
 
 
-for (let i = 0; i < dummyData.length; i++) {
-    console.log(dummyData[i].day);
-}
+
